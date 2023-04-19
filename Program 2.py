@@ -17,3 +17,9 @@ key = input("\033[0;33m\nKindly type in the keyword(all uppercase letters): ")
 
 # Apply ASCII code to the key to convert it into the appropriate letter values of 0 to 25.
 key_map = [ord(i) - 65 for i in key]
+
+# Implement the message encryption
+ciphertext = ""
+for i in range(len(message)):
+    encrypted_num = (ord(message[i]) - 65 + key_map[i % len(key_map)]) % 26
+    ciphertext += chr(encrypted_num + 65)
