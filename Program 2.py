@@ -28,3 +28,4 @@ print("=" * 70)
 
 # Print the output of this program
 print("\033[0;35m\nThe ciphertext is: " + ciphertext)
+print("_" * 70)
