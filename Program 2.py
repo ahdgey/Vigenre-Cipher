@@ -14,3 +14,6 @@ print("-" * 70)
 # Request for users message and key input
 message = input("\033[0;33m\nKindly type in the message(all uppercase letters, no spaces): ")
 key = input("\033[0;33m\nKindly type in the keyword(all uppercase letters): ")
+
+# Apply ASCII code to the key to convert it into the appropriate letter values of 0 to 25.
+key_map = [ord(i) - 65 for i in key]
